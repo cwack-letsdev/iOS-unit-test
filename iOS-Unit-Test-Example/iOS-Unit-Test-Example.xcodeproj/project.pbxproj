@@ -24,6 +24,15 @@
 		61633EDC162C3C2C00BB78FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61633EB4162C3C2B00BB78FC /* Foundation.framework */; };
 		61633EE4162C3C2C00BB78FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61633EE2162C3C2C00BB78FC /* InfoPlist.strings */; };
 		61633EE7162C3C2C00BB78FC /* iOS_Unit_Test_ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61633EE6162C3C2C00BB78FC /* iOS_Unit_Test_ExampleTests.m */; };
+		61633EF6162C3F6700BB78FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61633EB2162C3C2B00BB78FC /* UIKit.framework */; };
+		61633EF7162C3F6700BB78FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61633EB4162C3C2B00BB78FC /* Foundation.framework */; };
+		61633EF8162C3F6700BB78FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61633EB6162C3C2B00BB78FC /* CoreGraphics.framework */; };
+		61633EFE162C3F6700BB78FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61633EFC162C3F6700BB78FC /* InfoPlist.strings */; };
+		61633F00162C3F6700BB78FC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61633EFF162C3F6700BB78FC /* main.m */; };
+		61633F06162C3F6700BB78FC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 61633F05162C3F6700BB78FC /* Default.png */; };
+		61633F08162C3F6700BB78FC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61633F07162C3F6700BB78FC /* Default@2x.png */; };
+		61633F0A162C3F6700BB78FC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61633F09162C3F6700BB78FC /* Default-568h@2x.png */; };
+		61633F26162C405200BB78FC /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61633F25162C405200BB78FC /* GHUnitIOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +69,15 @@
 		61633EE3162C3C2C00BB78FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		61633EE5162C3C2C00BB78FC /* iOS_Unit_Test_ExampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOS_Unit_Test_ExampleTests.h; sourceTree = "<group>"; };
 		61633EE6162C3C2C00BB78FC /* iOS_Unit_Test_ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Unit_Test_ExampleTests.m; sourceTree = "<group>"; };
+		61633EF4162C3F6700BB78FC /* GHunit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHunit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		61633EFB162C3F6700BB78FC /* GHunit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GHunit-Info.plist"; sourceTree = "<group>"; };
+		61633EFD162C3F6700BB78FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		61633EFF162C3F6700BB78FC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		61633F01162C3F6700BB78FC /* GHunit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GHunit-Prefix.pch"; sourceTree = "<group>"; };
+		61633F05162C3F6700BB78FC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		61633F07162C3F6700BB78FC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		61633F09162C3F6700BB78FC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		61633F25162C405200BB78FC /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = frameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +101,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		61633EF1162C3F6700BB78FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61633F26162C405200BB78FC /* GHUnitIOS.framework in Frameworks */,
+				61633EF6162C3F6700BB78FC /* UIKit.framework in Frameworks */,
+				61633EF7162C3F6700BB78FC /* Foundation.framework in Frameworks */,
+				61633EF8162C3F6700BB78FC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		61633EA3162C3C2B00BB78FC = {
 			isa = PBXGroup;
 			children = (
+				61633F25162C405200BB78FC /* GHUnitIOS.framework */,
 				61633EB8162C3C2B00BB78FC /* iOS-Unit-Test-Example */,
 				61633EDF162C3C2C00BB78FC /* iOS-Unit-Test-ExampleTests */,
+				61633EF9162C3F6700BB78FC /* GHunit */,
 				61633EB1162C3C2B00BB78FC /* Frameworks */,
 				61633EAF162C3C2B00BB78FC /* Products */,
 			);
@@ -101,6 +132,7 @@
 			children = (
 				61633EAE162C3C2B00BB78FC /* iOS-Unit-Test-Example.app */,
 				61633ED8162C3C2C00BB78FC /* iOS-Unit-Test-ExampleTests.octest */,
+				61633EF4162C3F6700BB78FC /* GHunit.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -163,6 +195,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		61633EF9162C3F6700BB78FC /* GHunit */ = {
+			isa = PBXGroup;
+			children = (
+				61633EFA162C3F6700BB78FC /* Supporting Files */,
+			);
+			path = GHunit;
+			sourceTree = "<group>";
+		};
+		61633EFA162C3F6700BB78FC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				61633EFB162C3F6700BB78FC /* GHunit-Info.plist */,
+				61633EFC162C3F6700BB78FC /* InfoPlist.strings */,
+				61633EFF162C3F6700BB78FC /* main.m */,
+				61633F01162C3F6700BB78FC /* GHunit-Prefix.pch */,
+				61633F05162C3F6700BB78FC /* Default.png */,
+				61633F07162C3F6700BB78FC /* Default@2x.png */,
+				61633F09162C3F6700BB78FC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -202,6 +256,23 @@
 			productReference = 61633ED8162C3C2C00BB78FC /* iOS-Unit-Test-ExampleTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
+		61633EF3162C3F6700BB78FC /* GHunit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 61633F1F162C3F6700BB78FC /* Build configuration list for PBXNativeTarget "GHunit" */;
+			buildPhases = (
+				61633EF0162C3F6700BB78FC /* Sources */,
+				61633EF1162C3F6700BB78FC /* Frameworks */,
+				61633EF2162C3F6700BB78FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GHunit;
+			productName = GHunit;
+			productReference = 61633EF4162C3F6700BB78FC /* GHunit.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -226,6 +297,7 @@
 			targets = (
 				61633EAD162C3C2B00BB78FC /* iOS-Unit-Test-Example */,
 				61633ED7162C3C2C00BB78FC /* iOS-Unit-Test-ExampleTests */,
+				61633EF3162C3F6700BB78FC /* GHunit */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +321,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				61633EE4162C3C2C00BB78FC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61633EF2162C3F6700BB78FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61633EFE162C3F6700BB78FC /* InfoPlist.strings in Resources */,
+				61633F06162C3F6700BB78FC /* Default.png in Resources */,
+				61633F08162C3F6700BB78FC /* Default@2x.png in Resources */,
+				61633F0A162C3F6700BB78FC /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +369,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				61633EE7162C3C2C00BB78FC /* iOS_Unit_Test_ExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		61633EF0162C3F6700BB78FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61633F00162C3F6700BB78FC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +419,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				61633EE3162C3C2C00BB78FC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		61633EFC162C3F6700BB78FC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61633EFD162C3F6700BB78FC /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -443,6 +542,46 @@
 			};
 			name = Release;
 		};
+		61633F20162C3F6700BB78FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GHunit/GHunit-Prefix.pch";
+				INFOPLIST_FILE = "GHunit/GHunit-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		61633F21162C3F6700BB78FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GHunit/GHunit-Prefix.pch";
+				INFOPLIST_FILE = "GHunit/GHunit-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -468,6 +607,14 @@
 			buildConfigurations = (
 				61633EEE162C3C2C00BB78FC /* Debug */,
 				61633EEF162C3C2C00BB78FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		61633F1F162C3F6700BB78FC /* Build configuration list for PBXNativeTarget "GHunit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61633F20162C3F6700BB78FC /* Debug */,
+				61633F21162C3F6700BB78FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
