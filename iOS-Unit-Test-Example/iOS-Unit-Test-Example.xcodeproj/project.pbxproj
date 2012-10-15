@@ -34,6 +34,7 @@
 		61633F0A162C3F6700BB78FC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61633F09162C3F6700BB78FC /* Default-568h@2x.png */; };
 		61633F26162C405200BB78FC /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61633F25162C405200BB78FC /* GHUnitIOS.framework */; };
 		61633F29162C41B200BB78FC /* FirstTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 61633F28162C41B200BB78FC /* FirstTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		61633F2C162C42EC00BB78FC /* FirstAsyncTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 61633F2B162C42EC00BB78FC /* FirstAsyncTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		61633F09162C3F6700BB78FC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		61633F25162C405200BB78FC /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = frameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
 		61633F28162C41B200BB78FC /* FirstTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstTest.m; path = Tests/FirstTest.m; sourceTree = "<group>"; };
+		61633F2B162C42EC00BB78FC /* FirstAsyncTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstAsyncTest.m; path = Tests/FirstAsyncTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 			children = (
 				61633EFA162C3F6700BB78FC /* Supporting Files */,
 				61633F28162C41B200BB78FC /* FirstTest.m */,
+				61633F2B162C42EC00BB78FC /* FirstAsyncTest.m */,
 			);
 			path = GHunit;
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 			files = (
 				61633F00162C3F6700BB78FC /* main.m in Sources */,
 				61633F29162C41B200BB78FC /* FirstTest.m in Sources */,
+				61633F2C162C42EC00BB78FC /* FirstAsyncTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
