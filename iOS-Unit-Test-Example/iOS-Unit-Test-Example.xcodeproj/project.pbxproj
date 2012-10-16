@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AAA74F2F757F397FA09BA2F /* FirstTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAA7F0A8E7791DED16EA282 /* FirstTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5AAA7C79664A594AA922800C /* FirstViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAA7D40B84DEDCB2DD85B87 /* FirstViewControllerTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		61633EB3162C3C2B00BB78FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61633EB2162C3C2B00BB78FC /* UIKit.framework */; };
 		61633EB5162C3C2B00BB78FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61633EB4162C3C2B00BB78FC /* Foundation.framework */; };
 		61633EB7162C3C2B00BB78FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61633EB6162C3C2B00BB78FC /* CoreGraphics.framework */; };
@@ -33,8 +35,8 @@
 		61633F08162C3F6700BB78FC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61633F07162C3F6700BB78FC /* Default@2x.png */; };
 		61633F0A162C3F6700BB78FC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61633F09162C3F6700BB78FC /* Default-568h@2x.png */; };
 		61633F26162C405200BB78FC /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61633F25162C405200BB78FC /* GHUnitIOS.framework */; };
-		61633F29162C41B200BB78FC /* FirstTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 61633F28162C41B200BB78FC /* FirstTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		61633F2C162C42EC00BB78FC /* FirstAsyncTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 61633F2B162C42EC00BB78FC /* FirstAsyncTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		61633F4C162D4B9D00BB78FC /* LDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61633ECB162C3C2C00BB78FC /* LDViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5AAA7D40B84DEDCB2DD85B87 /* FirstViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewControllerTest.m; sourceTree = "<group>"; };
+		5AAA7F0A8E7791DED16EA282 /* FirstTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTest.m; sourceTree = "<group>"; };
 		61633EAE162C3C2B00BB78FC /* iOS-Unit-Test-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Unit-Test-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61633EB2162C3C2B00BB78FC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		61633EB4162C3C2B00BB78FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,7 +84,6 @@
 		61633F07162C3F6700BB78FC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		61633F09162C3F6700BB78FC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		61633F25162C405200BB78FC /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GHUnitIOS.framework; path = frameworks/GHUnitIOS.framework; sourceTree = "<group>"; };
-		61633F28162C41B200BB78FC /* FirstTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstTest.m; path = Tests/FirstTest.m; sourceTree = "<group>"; };
 		61633F2B162C42EC00BB78FC /* FirstAsyncTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstAsyncTest.m; path = Tests/FirstAsyncTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,8 +206,9 @@
 			isa = PBXGroup;
 			children = (
 				61633EFA162C3F6700BB78FC /* Supporting Files */,
-				61633F28162C41B200BB78FC /* FirstTest.m */,
 				61633F2B162C42EC00BB78FC /* FirstAsyncTest.m */,
+				5AAA7F0A8E7791DED16EA282 /* FirstTest.m */,
+				5AAA7D40B84DEDCB2DD85B87 /* FirstViewControllerTest.m */,
 			);
 			path = GHunit;
 			sourceTree = "<group>";
@@ -266,6 +270,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61633F1F162C3F6700BB78FC /* Build configuration list for PBXNativeTarget "GHunit" */;
 			buildPhases = (
+				61633F53162D4C6300BB78FC /* ShellScript */,
 				61633EF0162C3F6700BB78FC /* Sources */,
 				61633EF1162C3F6700BB78FC /* Frameworks */,
 				61633EF2162C3F6700BB78FC /* Resources */,
@@ -357,6 +362,19 @@
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
 		};
+		61633F53162D4C6300BB78FC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Copies images from former runs\n\"$PROJECT_DIR/../Scripts/CopyTestImages.sh\"\n\n# Prepare GHUnit for UI Tests\n\"$PROJECT_DIR/../Scripts/PrepareUITests.sh\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -383,8 +401,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				61633F00162C3F6700BB78FC /* main.m in Sources */,
-				61633F29162C41B200BB78FC /* FirstTest.m in Sources */,
 				61633F2C162C42EC00BB78FC /* FirstAsyncTest.m in Sources */,
+				61633F4C162D4B9D00BB78FC /* LDViewController.m in Sources */,
+				5AAA74F2F757F397FA09BA2F /* FirstTest.m in Sources */,
+				5AAA7C79664A594AA922800C /* FirstViewControllerTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,6 +629,7 @@
 				61633EEC162C3C2C00BB78FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61633EED162C3C2C00BB78FC /* Build configuration list for PBXNativeTarget "iOS-Unit-Test-ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -617,6 +638,7 @@
 				61633EEF162C3C2C00BB78FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61633F1F162C3F6700BB78FC /* Build configuration list for PBXNativeTarget "GHunit" */ = {
 			isa = XCConfigurationList;
@@ -625,6 +647,7 @@
 				61633F21162C3F6700BB78FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

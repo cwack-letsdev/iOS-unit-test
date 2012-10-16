@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 let's dev. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import <GHUnitIOS/GHUnit.h>
 
 @interface FirstTest : GHTestCase { }
